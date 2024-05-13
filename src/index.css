@@ -1,0 +1,76 @@
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+
+/* Tela de Login */
+.Login{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.form_login{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 60vh;
+  border: 2px solid #207F16;
+  border-radius: 10px;
+}
+.form_login #title_login{
+  font-size: 32px;
+  font-weight: 700;
+  color: #207F16;
+  margin-bottom: 10px;
+}
+.form_login #subtitle_login{
+  color: #494949;
+  margin-bottom: 25px;
+}
+.form_login input, button{
+  width: 80%;
+  height: 40px;
+  padding-left: 15px;
+  margin-top: 10px;
+  border: 1px solid rgb(0, 0, 0, 20%);
+  border-radius: 5px;
+}
+.form_login button{
+  width: 83% ;
+  height: 40px;
+  padding-left: 15px;
+  margin-top: 10px;
+  background-color: #207F16;
+  border-radius: 5px;
+  font-size: 14;
+  font-weight: 600;
+  color: white;
+}
+.form_login .links_login{
+  display: flex;
+  flex-direction: row;
+  width: 83%;
+  margin-top: 10px;
+}
+.form_login .links_login a{
+  color: #207F16;
+}
+.form_login .links_login a:nth-child(2){
+  margin-left: auto;
+}

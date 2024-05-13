@@ -1,40 +1,70 @@
-# Gerenciador de Recursos - Frontend
+# Getting Started with Create React App
 
-Este é o repositório do frontend para o Gerenciador de Recursos, um projeto desenvolvido em React para auxiliar na gestão e monitoramento de recursos como água, energia, matéria-prima, entre outros.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Funcionalidades Principais
+## Available Scripts
 
-1. **Login/Cadastro de Usuários**: Os usuários podem se cadastrar e fazer login para acessar as funcionalidades do sistema. As informações de usuário serão autenticadas pelo backend e armazenadas de forma segura.
+In the project directory, you can run:
 
-2. **Cadastro e Exibição de Recursos**: O sistema permite o cadastro e exibição de todos os recursos disponíveis para monitoramento. Isso inclui recursos como água, energia, matéria-prima, entre outros. Cada recurso será identificado por um nome único e terá suas informações associadas.
+### `npm start`
 
-3. **Acompanhamento do Uso de Recursos**: Os usuários podem acompanhar o uso dos recursos ao longo do tempo. Isso inclui visualizar informações sobre o consumo de cada recurso em determinados períodos.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-4. **Definição de Metas de Gastos**: Os usuários podem estabelecer metas de gastos para cada recurso. Isso ajuda a monitorar e controlar o uso de recursos, garantindo que as metas sejam cumpridas.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-5. **Geração de Relatórios**: O sistema é capaz de gerar relatórios detalhados sobre o acompanhamento do uso de recursos. Esses relatórios fornecem insights valiosos sobre o consumo de recursos e o desempenho em relação às metas estabelecidas.
+### `npm test`
 
-## Tecnologias Utilizadas
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **React**: Biblioteca JavaScript utilizada para construir a interface de usuário do frontend.
-- **React Router**: Utilizado para gerenciar a navegação entre as páginas da aplicação.
-- **Axios**: Biblioteca utilizada para fazer requisições HTTP para o backend.
-- **Material-UI**: Framework de componentes React utilizado para estilizar a interface de usuário de forma rápida e eficiente.
-- **JWT (JSON Web Tokens)**: Utilizado para autenticação e autorização de usuários.
-- **Swagger**: Documentação interativa da API para facilitar o entendimento e utilização.
+### `npm run build`
 
-## Como Executar o Projeto
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Clone este repositório para o seu ambiente de desenvolvimento.
-2. Navegue até o diretório do projeto e execute `npm install` para instalar as dependências.
-3. Configure as variáveis de ambiente necessárias, como as URLs de conexão com o backend e as chaves de segurança para JWT.
-4. Execute o projeto utilizando `npm start`.
-5. Acesse a aplicação em `http://localhost:3000` e explore as funcionalidades disponíveis.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Contribuições
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues relatando problemas, sugerir melhorias ou enviar pull requests com novos recursos ou correções de bugs.
+### `npm run eject`
 
-## Licença
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
