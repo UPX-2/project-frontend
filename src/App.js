@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './Login';
+import Cadastro from './Cadastro';
 import Home from './Home';
 import Dashboard from './Dashboard';
 
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login setToken={setToken} />} />
+        <Route path="/cadastro" element={<Cadastro />} />
         <Route
           path="/dashboard"
           element={token ? <Dashboard token={token} /> : <Navigate to="/login" />}

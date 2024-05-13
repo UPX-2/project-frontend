@@ -39,7 +39,7 @@ const Login = ({ setToken }) => {
         <input type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)}/>
         <button onClick={handleLogin}>ENTRAR</button>
         <div className='links_login'>
-          <a href=''>Cadastre-se</a>
+          <a href='/Cadastro'>Cadastre-se</a>
           <a href=''>Esqueceu sua senha?</a>
         </div>
       </div>
