@@ -1,8 +1,9 @@
 // Login.js
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
-const Login = ({ setToken }) => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -16,13 +17,13 @@ const Login = ({ setToken }) => {
         },
         body: JSON.stringify({ email, password }),
       });
-
+  
       if (!response.ok) {
         throw new Error('Credenciais inválidas');
       }
-
+  
       const data = await response.json();
-      setToken(data.token);
+      Cookies.set('token', data.token); // Salva o token nos cookies
       navigate('/dashboard');
     } catch (error) {
       alert(error.message);
