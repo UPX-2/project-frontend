@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import ModalMetrica from './ModalMetrica';
+import ModalEntrada from './ModalEntrada';
 
 const SubMenu = ({ userMetrics, handleMetricClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedMetric, setSelectedMetric] = useState(userMetrics.length > 0 ? userMetrics[0] : null);
   const [isModalMetricaActive, setIsModalMetricaActive] = useState(false);
+  const [isModalEntradaActive, setIsModalEntradaActive] = useState(false);
 
   const toggleSubMenu = () => {
     setIsOpen(!isOpen);
@@ -19,13 +21,16 @@ const SubMenu = ({ userMetrics, handleMetricClick }) => {
   const openModalMetrica = () => setIsModalMetricaActive(true);
   const closeModalMetrica = () => setIsModalMetricaActive(false);
 
+  const openModalEntrada = () => setIsModalEntradaActive(true);
+  const closeModalEntrada = () => setIsModalEntradaActive(false);
+
   return (
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <button className='button' style={{ marginRight: 'auto' }} onClick={openModalMetrica}>
         Criar nova meta
       </button>
 
-      <button className='button' style={{ marginLeft: 'auto' }}>
+      <button className='button' style={{ marginLeft: 'auto' }} onClick={openModalEntrada}>
         Novo Registro
       </button>
       
@@ -48,6 +53,7 @@ const SubMenu = ({ userMetrics, handleMetricClick }) => {
       </div>
 
       <ModalMetrica isActive={isModalMetricaActive} onClose={closeModalMetrica} />
+      <ModalEntrada isActive={isModalEntradaActive} onClose={closeModalEntrada} />
     </div>
   );
 };

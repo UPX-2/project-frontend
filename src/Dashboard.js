@@ -66,6 +66,7 @@ const Dashboard = () => {
           fetchData(userMetricsData[0].id);
           setSelectedMetricData(userMetricsData[0]);
           handleMetricClick(userMetricsData[0].id)
+          Cookies.set('activeMetric', userMetricsData[0].id);
         }
       } catch (error) {
         console.error(error.message);
@@ -93,6 +94,7 @@ const Dashboard = () => {
 
       const data = await response.json();
       setSelectedMetricData(data);
+      Cookies.set('activeMetric', metricId);
     } catch (error) {
       console.error(error.message);
     }

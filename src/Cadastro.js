@@ -25,7 +25,7 @@ const Cadastro = ({ setToken }) => {
       const data = await response.json();
 
       if(data.return = "success"){
-        alert("Usuário criado com sucesso")
+        // alert("Usuário criado com sucesso")
         navigate('/login');
       }
     } catch (error) {
